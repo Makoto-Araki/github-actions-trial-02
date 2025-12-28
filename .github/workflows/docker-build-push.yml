@@ -1,0 +1,21 @@
+name: Build and Push Docker Image
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Read versions
+        id: versions
+        run: |
+          set -a
+          source VERSIONS.txt
+          echo "PYTHON_APP_IMAGE_VERSION=${PYTHON_APP_IMAGE_VERSION}" >> $GITHUB_OUTPUT
