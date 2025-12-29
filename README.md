@@ -112,7 +112,7 @@ $ vi main.py
 
 ### Github Actions 動作開始
 ```bash
-## バージョン情報の更新
+## バージョン情報の更新 ※0.0.7に更新
 $ cd github-actions-trial-02
 $ vi VERSIONS.txt
 
@@ -126,3 +126,13 @@ $ git add .
 $ git commit -m VERSION更新_2025122_01
 $ git push origin main
 ```
+
+### Github Actions 動作確認
+#### Github の Actions を押下
+![github_actions_15](images/github_actions_15.png)
+
+#### Github の Github Actions の結果確認
+![github_actions_16](images/github_actions_16.png)
+
+#### Dockerhub のバージョン確認
+![github_actions_17](images/github_actions_17.png)
