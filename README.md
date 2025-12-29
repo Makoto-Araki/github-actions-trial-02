@@ -64,6 +64,14 @@ $ code .
 ## ソース記述(開発作業)
 $ cd github-actions-trial-02
 $ vi main.py
+
+## Github Actions 用のディレクトリ作成
+$ cd github-actions-trial-02
+$ mkdir -p .github/workflows
+
+## Github Actions 用のYAML作成
+$ cd github-actions-trial-02
+$ vi .github/workflows/docker-build-push.yml
 ```
 
 ### Dockerhub 準備
